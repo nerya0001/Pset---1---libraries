@@ -39,23 +39,3 @@ int isPrime(int n) {
   }
   return true;
 }
-
-// int main() {
-  // int n = 146;
-  // int ans = isStrong(n);
-  // if (ans == 1) {
-  //   printf("n is a Strong number");
-  // }
-  // if (ans == 0) {
-  //   printf("n is not a Strong number");
-  // }
-  // int n = 5, b = 4, g = 7, u = 19;
-  // int ans1 = isPrime(n);
-  // int ans2 = isPrime(b);
-  // if (ans1 == 1) {
-  //   printf("n is prime\n");
-  // }else {printf("n is not prime\n");}
-  // if (ans2 == 1) {
-  //   printf("b is prime\n");
-  // }else {printf("b is not prime\n");}
-// }
