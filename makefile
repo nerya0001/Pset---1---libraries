@@ -5,13 +5,9 @@ FLAGS= -Wall -g
 
 all: libclassloops.a libclassloops.so libclassrec.a libclassrec.so loops looped recursives recursived mains maindrec maindloop
 loops: libclassloops.a
-	# $(CC) $(FLAGS) -o loops $(OBJECTS_MAIN) libclassloops.a
 looped: libclassloops.so
-	# $(CC) $(FLAGS) -o looped $(OBJECTS_MAIN) ./libclassloops.so
 recursives: libclassrec.a
-	# $(CC) $(FLAGS) -o recursived $(OBJECTS_MAIN) libclassrec.a
 recursived: libclassrec.so
-	# $(CC) $(FLAGS) -o recursived $(OBJECTS_MAIN) ./libclassrec.so
 libclassloops.a: advancedClassificationloop.o basicClassification.o
 	$(AR) -rcs libclassloops.a advancedClassificationloop.o basicClassification.o
 libclassloops.so: advancedClassificationloop.o basicClassification.o
