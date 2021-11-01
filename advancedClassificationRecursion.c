@@ -18,9 +18,19 @@ int isArmHelp(int n, int dig) {
   return 0;
 }
 
+int reverse(int n, int tmp) {
+    if (n == 0){
+        return tmp;
+    }
+
+    tmp = (tmp * 10) + (n % 10);
+    return reverse(n / 10, tmp);
+}
+
 //isPalindrome
 int isPalindrome(int n) {
-
+  int reversed = reverse(n, 0);
+  return n == reversed ? true : false;
 }
 
 //isArmstrong
@@ -32,14 +42,14 @@ int isArmstrong(int n) {
 }
 
 // int main() {
-//   int n = 407;
-//   int ans = isArmstrong(n);
+// //   int n = 407;
+// //   int ans = isArmstrong(n);
+// //   if (ans == 1) {
+// //     printf("n is armstrong\n");
+// //   } else {printf("n is not an Armstrong\n");}
+//   int n = 1881;
+//   int ans = isPalindrome(n);
 //   if (ans == 1) {
-//     printf("n is armstrong\n");
-//   } else {printf("n is not an Armstrong\n");}
-  // int n = 1881;
-  // int ans = isPalindrome(n);
-  // if (ans == 1) {
-  //   printf("n is a palindrome\n");
-  // }else {printf("n is not a palindrome\n");}
-}
+//     printf("n is a palindrome\n");
+//   } else {printf("n is not a palindrome\n");}
+// }
