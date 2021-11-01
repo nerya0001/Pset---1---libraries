@@ -40,11 +40,11 @@ int isArmstrong(int n) {
 }
 
 // int main() {
-//   // int n = 407;
-//   // int ans = isArmstrong(n);
-//   // if (ans == 1) {
-//   //   printf("n is armstrong\n");
-//   // }
+//   int n = 407;
+//   int ans = isArmstrong(n);
+//   if (ans == 1) {
+//     printf("n is armstrong\n");
+//   }
 //   int n = 1881;
 //   int ans = isPalindrome(n);
 //   if (ans == 1) {
