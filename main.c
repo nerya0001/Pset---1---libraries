@@ -4,7 +4,7 @@
 int main() {
   int a, b;
 
-  printf("Please enter two positive integers:\n");
+
   scanf("%d%d", &a, &b);
 
   //isArmstrong
