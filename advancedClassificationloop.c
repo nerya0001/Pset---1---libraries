@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdbool.h>
+#include "NumClass.h"
 
 int dig(int x) {
   int count = 0;
