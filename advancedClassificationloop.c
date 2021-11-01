@@ -11,9 +11,18 @@ int dig(int x) {
   return count;
 }
 
+int reverse(int x) {
+  int reversed = 0;
+  while (x > 0) {
+    reversed = reversed * 10 + x % 10;
+    x /= 10;
+  }
+  return reversed;
+}
 //isPalindrome
 int isPalindrome(int n) {
-
+  int reversed = reverse(n);
+  return n == reversed ? true : false;
 }
 
 //isArmstrong
@@ -31,9 +40,14 @@ int isArmstrong(int n) {
 }
 
 // int main() {
-//   int n = 407;
-//   int ans = isArmstrong(n);
+//   // int n = 407;
+//   // int ans = isArmstrong(n);
+//   // if (ans == 1) {
+//   //   printf("n is armstrong\n");
+//   // }
+//   int n = 1881;
+//   int ans = isPalindrome(n);
 //   if (ans == 1) {
-//     printf("n is armstrong\n");
-//   }
-}
+//     printf("n is a palindrome\n");
+//   }else {printf("n is not a palindrome\n");}
+// }
