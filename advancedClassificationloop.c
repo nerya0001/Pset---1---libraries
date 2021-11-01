@@ -30,10 +30,10 @@ int isArmstrong(int n) {
   return false;
 }
 
-int main() {
-  int n = 407;
-  int ans = isArmstrong(n);
-  if (ans == 1) {
-    printf("n is armstrong\n");
-  }
+// int main() {
+//   int n = 407;
+//   int ans = isArmstrong(n);
+//   if (ans == 1) {
+//     printf("n is armstrong\n");
+//   }
 }
