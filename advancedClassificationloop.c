@@ -3,6 +3,7 @@
 #include <stdbool.h>
 #include "NumClass.h"
 
+//helper function that return the number of digits in a number
 int dig(int x) {
   int count = 0;
   while (x > 0) {
@@ -12,6 +13,7 @@ int dig(int x) {
   return count;
 }
 
+//helper function that return the number reversed
 int reverse(int x) {
   int reversed = 0;
   while (x > 0) {
@@ -20,6 +22,7 @@ int reverse(int x) {
   }
   return reversed;
 }
+
 //isPalindrome
 int isPalindrome(int n) {
   int reversed = reverse(n);

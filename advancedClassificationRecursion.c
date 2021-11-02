@@ -3,6 +3,7 @@
 #include <stdbool.h>
 #include "NumClass.h"
 
+//helper function that return the number of digits in the number
 int dig(int x) {
   int count = 0;
   while (x > 0) {
@@ -12,6 +13,7 @@ int dig(int x) {
   return count;
 }
 
+//helper function that return the result of the calculation recursivlely
 int isArmHelp(int n, int dig) {
   if (n > 0) {
     return (pow(n % 10, dig) + isArmHelp(n / 10, dig));
@@ -19,6 +21,7 @@ int isArmHelp(int n, int dig) {
   return 0;
 }
 
+//helper function that return the number reversed recursively
 int reverse(int n, int tmp) {
     if (n == 0){
         return tmp;

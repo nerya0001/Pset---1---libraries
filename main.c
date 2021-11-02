@@ -3,10 +3,10 @@
 
 int main() {
   int a, b;
-
-
+  do {
   scanf("%d%d", &a, &b);
-
+  }
+  while (a <= 0 || b <= 0);//checking that the input is as it should be
   //isArmstrong
   printf("The Armstrong numbers are: ");
   for (int i = a; i <= b; i++) {

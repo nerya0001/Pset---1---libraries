@@ -3,7 +3,7 @@ AR=ar
 OBJECTS_MAIN=main.o
 FLAGS= -Wall -g
 
-all: libclassloops.a libclassloops.so libclassrec.a libclassrec.so loops looped recursives recursived mains maindrec maindloop
+all: libclassloops.a libclassloops.so libclassrec.a libclassrec.so mains maindrec maindloop
 loops: libclassloops.a
 looped: libclassloops.so
 recursives: libclassrec.a

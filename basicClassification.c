@@ -2,12 +2,14 @@
 #include <stdbool.h>
 #include "NumClass.h"
 
+//factorial - helper function
 int factorial(int x) {
   if(x == 1 || x == 0) {
     return true;
   }
   return factorial(x - 1) * x;
 }
+
 //isStrong
 int isStrong(int n) {
   int sum = 0;
