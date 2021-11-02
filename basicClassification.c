@@ -26,7 +26,7 @@ int isStrong(int n) {
 
 //isPrime
 int isPrime(int n) {
-  if (n < 1) {
+  if (n <= 1) {
     return false;
   }
   if (n <= 3) {
