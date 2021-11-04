@@ -7,6 +7,13 @@ int main() {
   scanf("%d%d", &a, &b);
   }
   while (a <= 0 || b <= 0);//checking that the input is as it should be
+
+  if (a > b) {
+    int tmp = a;
+    a = b;
+    b = tmp;
+  }
+
   //isArmstrong
   printf("The Armstrong numbers are:");
   for (int i = a; i <= b; i++) {
